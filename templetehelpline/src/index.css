@@ -1,0 +1,159 @@
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Color Palette */
+  --primary-red: #e11d48;
+  --primary-red-hover: #be123c;
+  --primary-red-light: #ffe4e6;
+  
+  --accent-amber: #f59e0b;
+  --accent-amber-light: #fef3c7;
+  
+  --accent-blue: #2563eb;
+  --accent-blue-light: #dbeafe;
+  
+  --accent-green: #10b981;
+  --accent-green-light: #d1fae5;
+
+  /* Theme Tokens (Default Light) */
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border-color: #e2e8f0;
+  --border-focus: #e11d48;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 20px rgba(225, 29, 72, 0.25);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+[data-theme='dark'] {
+  --bg-main: #0b0f17;
+  --bg-card: #151c28;
+  --bg-subtle: #1c2638;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --border-color: #263346;
+  --border-focus: #fb7185;
+  --primary-red-light: rgba(225, 29, 72, 0.18);
+  --accent-amber-light: rgba(245, 158, 11, 0.18);
+  --accent-blue-light: rgba(37, 99, 235, 0.18);
+  --accent-green-light: rgba(16, 185, 129, 0.18);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Common utility classes */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Badge tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-critical {
+  background-color: var(--primary-red-light);
+  color: var(--primary-red);
+}
+
+.badge-high {
+  background-color: var(--accent-amber-light);
+  color: #b45309;
+}
+
+.badge-medium {
+  background-color: var(--accent-blue-light);
+  color: var(--accent-blue);
+}
+
+.badge-low {
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+}
+
+.badge-resolved {
+  background-color: var(--accent-green-light);
+  color: var(--accent-green);
+}
+
+.badge-dispatched {
+  background-color: var(--accent-blue-light);
+  color: var(--accent-blue);
+}
+
+.badge-in-progress {
+  background-color: var(--accent-amber-light);
+  color: #b45309;
+}
