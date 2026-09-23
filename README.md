@@ -75,13 +75,11 @@ Now click or visit: **`http://localhost:5173`** 🎉
 > Quick access to emergency incident reporting, active helplines, and survival guides.  
 <img width="960" height="600" alt="Screenshot 2026-09-23 092018" src="https://github.com/user-attachments/assets/2d6d292c-3a95-4988-b4cd-1ee3901bd613" />
 
-
 ---
 
 ### 2. 🚨 Report Emergency Incident
 > Easy form for citizens to submit location, urgency, disaster category, and affected victim count.  
 <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/814d2252-73c5-4d9d-8ece-e00bb426af11" />
-
 
 ---
 
@@ -89,13 +87,11 @@ Now click or visit: **`http://localhost:5173`** 🎉
 > Real-time progress stepper (`Reported` ➔ `Under Review` ➔ `In Progress` ➔ `Resolved`) with field responder notes.  
 <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/d9146786-a9c6-42fd-bcfc-978873771c04" />
 
-
 ---
 
 ### 4. 🎛️ Control Room Admin Dashboard
 > Authority console to triage critical cases, dispatch rescue teams, and update case notes.  
 <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/1ed20e01-6bab-42ca-98f6-b2bdb0e7f535" />
-
 
 ---
 
@@ -103,9 +99,18 @@ Now click or visit: **`http://localhost:5173`** 🎉
 > One-tap emergency calling to universal and disaster relief numbers (112, 1078, 108, 101).  
 <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/1e509f47-b2ff-4867-8b8e-552379cdaa84" />
 
+---
+
+## 👥 Team & Contributions
+
+| Member Name | Role | Key Contributions | GitHub / Profile |
+|---|---|---|---|
+| **Tejas Mayekar** | Full-Stack Lead | Backend REST API, MongoDB integration, system architecture & controllers | [@tejasmayekar](https://github.com/) |
+| **[Teammate 2 Name]** | Frontend Developer | React pages (`ReportComplaint.jsx`, `TrackComplaint.jsx`), form validation | [@username](https://github.com/) |
+| **[Teammate 3 Name]** | UI/UX & Design | Responsive CSS design system, dark/light mode toggle, Admin Console UI | [@username](https://github.com/) |
+| **[Teammate 4 Name]** | Testing & Documentation | API verification, database testing, presentation & viva documentation | [@username](https://github.com/) |
 
 ---
 
 ## 💡 Built With Care
 Hope this project is helpful for understanding how real-world emergency management systems connect citizens with first responders! Feel free to explore the code, report issues, or suggest improvements.
-
